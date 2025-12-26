@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>DRAGNA SKLEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🩸DRAGNA SKLEP🩸</h1>
+  <div id="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</header>
+
+<nav>
+  <button onclick="showTab('weapons')">🔫 Broń</button>
+  <button onclick="showTab('armor')">🛡️ Pancerz</button>
+  <button onclick="showTab('cars')">🚗 Samochody</button>
+</nav>
+
+<div id="shop">
+  <div id="weapons" class="tab"></div>
+  <div id="armor" class="tab"></div>
+  <div id="cars" class="tab"></div>
+</div>
+
+<div id="cart-panel">
+  <span id="cart-close" onclick="toggleCart()">❌</span>
+  <h2>Koszyk</h2>
+  <div id="cart-items"></div>
+  <h3 id="cart-total">Suma: 0$</h3>
+
+  <input id="org" placeholder="Nazwa organizacji">
+  <input id="phone" placeholder="Telefon IC">
+  <input id="bossD" placeholder="Discord szefa">
+  <input id="bossF" placeholder="FiveM szefa">
+  <input id="auth" placeholder="Upoważnienie (opcjonalne)">
+
+  <button onclick="sendOrder()">POTWIERDŹ</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
